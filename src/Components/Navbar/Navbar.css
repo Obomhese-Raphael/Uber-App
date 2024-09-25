@@ -1,0 +1,209 @@
+.navbar {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 200px;
+  padding-right: 200px;
+  z-index: 100;
+}
+
+.about {
+  position: relative;
+}
+
+.about .text {
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: "UberMove", "UberMoveText", "Uber Move", "Uber Move Text",
+    sans-serif;
+}
+
+.dropdown {
+  width: 100%;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e6e6e6;
+  background: #000;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 250px;
+  height: 500px;
+  z-index: 20;
+  margin-top: 50px;
+  margin-right: 50px;
+  background-color: rgb(255, 255, 255);
+  margin: 35px -10px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 16px;
+  overflow: auto;
+  overflow: hidden;
+}
+
+.opened {
+  color: inherit;
+  font-weight: 400;
+  font-size: 10px;
+  text-decoration: none;
+  width: 350px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  margin-right: 10px;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+.opened:hover {
+  background: #e6e6e6;
+}
+
+.left-side {
+  display: inline-flex;
+  align-items: center;
+}
+
+.left-side p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+}
+
+.left-side ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.left-side ul .li {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 7px 10px;
+  transition: 0.5s ease;
+}
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.right-side ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.right-side ul li {
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 10px;
+  transition: color 0.3s ease;
+}
+
+.right-side ul li:hover {
+  color: #ccc;
+  background-color: #3b3434;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.right-side ul li button {
+  height: 50px;
+  width: 120px;
+  border-radius: 30px;
+  border: none;
+  color: #000;
+  background-color: #e6e6e6;
+  font-weight: 500;
+}
+
+.right-side ul li button:hover {
+  color: #000;
+  padding: 0;
+  cursor: pointer;
+}
+
+.right-side ul .en {
+  display: flex;
+  align-items: center;
+}
+
+.right-side ul li .globe {
+  width: 13px;
+  margin-right: 4px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 0px;
+    border-bottom: 1px solid #fff;
+    max-width: 100%;
+  }
+  .navbar .left-side .li {
+    display: none;
+  }
+  .navbar .left-side .uber {
+    margin: 20px;
+    text-align: left;
+  }
+  .navbar .left-side .uber p {
+    margin: none;
+    font-weight: normal;
+    font-size: 18px;
+  }
+  .navbar .right-side li {
+    display: none;
+  }
+  .about {
+    display: none;
+  }
+  .menu {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    margin-right: 10px;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .menu button {
+    font-size: 13px;
+  }
+  .menu .button {
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .menu_option {
+    display: block;
+  }
+}

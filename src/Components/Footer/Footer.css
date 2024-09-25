@@ -1,0 +1,230 @@
+.footer {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+}
+
+.footer-container {
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+.footer .sect {
+  align-items: center;
+  text-align: center;
+}
+
+.footer .sect .logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+.footer .sect .logo h3 {
+  font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 112px;
+  position: relative;
+  text-decoration: none;
+  background-size: 0% 100%, 100% 100%;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  text-align: left;
+  top: 0;
+  white-space: nowrap;
+}
+
+.footer .sect .logo p {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.top-footer {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
+  text-align: justify;
+  line-height: 3;
+}
+h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.top-footer p {
+  line-height: 3;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.top-footer p:hover {
+  color: #a0a0a0;
+}
+
+.globe {
+  height: 30px;
+}
+
+.top-footer .section5 {
+  display: flex;
+  margin-top: 25px;
+}
+
+.bottom-footer ul {
+  display: flex;
+  justify-content: left;
+  gap: 50px;
+  list-style: none;
+  margin-left: 50px;
+  color: #fff;
+}
+
+.bottom-footer .bottom {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.bottom-footer ul li {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.bottom-footer .bottom .flex {
+  justify-content: right;
+  display: flex;
+  font-size: 15px;
+  gap: 30px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.flex li img {
+  width: 25px;
+  height: 25px;
+}
+
+.flex img {
+  width: 150px;
+}
+
+.flex.play {
+  margin-left: 50px;
+}
+
+.flex li p {
+  margin-left: 5px;
+}
+
+.flex.play.end {
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.flex.play.end .left {
+  font-size: 12px;
+}
+
+.flex.play.end .right {
+  font-size: 12px;
+}
+
+.btp {
+  display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    display: block;
+    font-family: "UberMove", "UberMoveText", "Uber Move", "Uber Move Text";
+    padding-bottom: 50px;
+  }
+  .footer-container .sect .logo {
+    margin: 0;
+    margin: 10px;
+    margin-bottom: 30px;
+  }
+  .footer-container .top-footer {
+    display: block;
+  }
+  .footer-container .top-footer .section_space {
+    margin-bottom: 20px;
+  }
+  .footer-container .top-footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .footer-container .top-footer p {
+    font-size: 12px;
+    width: fit-content;
+  }
+  .bottom-footer .bottom {
+    display: block;
+    margin: 0px;
+  }
+  .bottom-footer .bottom ul {
+    display: flex;
+    margin: 0px;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  .bottom-footer .bottom .flex {
+    display: block;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .bottom-footer .bottom .flex li {
+    margin-bottom: 15px;
+  }
+  .bottom-footer .flex.play {
+    margin: 0;
+    padding-left: 30px;
+  }
+  .bottom-footer .flex.play.end {
+    display: block;
+    margin: 0;
+    justify-content: space-between;
+  }
+  .bottom-footer .flex.play.end .left {
+    margin-top: 20px;
+    color: #cfc9c9;
+  }
+  .bottom-footer .flex.play.end .right ul {
+    padding-top: 20px;
+    margin-left: -50px;
+    margin: auto;
+    color: #cfc9c9;
+  }
+  .btp {
+    display: block;
+  }
+}

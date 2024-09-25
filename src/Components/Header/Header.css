@@ -1,0 +1,153 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.header .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .left .gawu {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.header .left .rar {
+  margin-bottom: 30px;
+}
+.header .left p {
+  color: #fff;
+}
+
+.header .left input {
+  margin-top: 10px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 35px;
+  font-size: 15px;
+}
+
+.header .left button {
+  margin-top: 20px;
+  height: 50px;
+  width: 150px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header .left .input_msg {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header .left .input_msg .input_1 {
+  position: relative;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.header .left .input_msg span {
+  color: #000;
+  position: absolute;
+  padding-left: 430px;
+  padding-top: 10px;
+  cursor: pointer;
+  margin-left: -50px;
+  width: fit-content;
+}
+.header .left button:hover {
+  background-color: #ccc;
+  transition: 0.5s;
+}
+
+.header .right img {
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+.menu {
+  display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 760px) {
+  .header {
+    display: block;
+  }
+  .header .left {
+    width: 100%;
+  }
+  .header .left .gawu {
+    font-family: "UberMoveText", "UberMove", "Uber Move", "Uber Move Text";
+    font-size: 40px;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+  }
+  .header .left .rar {
+    margin-left: 5%;
+    margin-top: 10px;
+  }
+  .header .left .input_msg {
+    width: 90%;
+    cursor: text;
+    margin: auto;
+    color: #000;
+  }
+  .header .left .input_msg .input_1 {
+    width: 100%;
+    padding-left: -20px;
+    align-items: center;
+    margin: auto;
+    color: #000;
+  }
+  .header .left .input_msg span {
+    display: none;
+  }
+
+  .header .left .des {
+    width: 90%;
+    padding-left: -20px;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .header .left .sp {
+    margin-left: 5%;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 50%;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .header .right {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .header .right img {
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: -50px;
+  }
+}

@@ -1,0 +1,296 @@
+.eats {
+  width: 100%;
+  position: relative;
+  font-family: "Uber Move Text", sans-serif;
+  background-color: #fff;
+  background: #fff;
+  height: auto;
+}
+
+.top {
+  width: 100%;
+}
+
+.top .inner_top {
+  position: relative;
+  height: 600px;
+  background-image: url(../../assets/bg_banner.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.inner_top .head {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  z-index: 1;
+  max-width: 100%;
+  margin-bottom: 40px;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 64px;
+  font-family: "UberMove", "Uber", sans-serif;
+}
+
+.inner_flex {
+  justify-content: left;
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+}
+
+.address {
+  max-width: 540px;
+  flex: 1;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+
+.address .label {
+  margin: -1px;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.address .fc {
+  min-width: 500px;
+}
+
+.address .bo {
+  border: none;
+  padding: 8px 16px;
+  line-height: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  display: -webkit-box;
+  min-width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  transition: box-shadow 0.3s ease-in-out;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.space {
+  height: 1px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  width: 16px;
+}
+
+.address .fc {
+  height: 60px;
+}
+
+.address .fc .input {
+  appearance: none;
+  flex: 1;
+  outline: none;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+.deliver {
+  max-width: 540px;
+  flex: 1;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  height: 56px;
+}
+
+.deliver .ak {
+  position: relative;
+}
+
+.deliver .ak .fv {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffffff;
+  box-shadow: inset 0px -1px 0px #f3f3f3;
+}
+
+.deliver .ak .fv .al {
+  display: flex;
+  color: #000;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  background: #ffffff;
+}
+
+.space_4 {
+  height: 1px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  width: 4px;
+}
+
+.al .icon {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.al .icon .fw {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  overflow: hidden;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.al .icon .fw .dn {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  line-height: 20px;
+  font-weight: 500;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+.al .icon .fw .ee {
+  width: 48px;
+  height: 48px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.al .icon .fw .ee .fj {
+  line-height: 1;
+  height: 24px;
+  width: 24px;
+}
+
+.f0 {
+  border-radius: 8px;
+  padding: 14px 18px;
+  width: max-content;
+  min-height: 50px;
+  font-size: 14px;
+  height: 50px;
+  background: #000000;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  line-height: 24px;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.f0:hover {
+  background: #111010;
+}
+
+.head .link {
+  font-size: 14px;
+  font-family: "UberMoveText", sans-serif;
+  font-weight: normal;
+}
+
+.middle {
+  background-color: #fff;
+}
+
+.space__component {
+  height: 80px;
+}
+
+.top .bh {
+  margin-bottom: -24px;
+  flex-wrap: nowrap;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.top .bh .ei {
+  margin-left: 0%;
+  padding-right: 12px;
+  padding-left: 12px;
+  width: 33.333333333333336%;
+  flex: none;
+  display: block;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+
+.top .bh .ei .cp {
+  margin-bottom: 16px;
+}
+.top .bh .ei .cp .ap {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: 55.970149253731336%;
+  background-color: #e8e8e8;
+  margin-bottom: 8px;
+}
+
+.top .bh .ei .cp .ap .as {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.top .bh .ei .cp .ap .bk {
+  line-height: 36px;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: UberMoveText, sans-serif;
+  margin-top: 20px;
+}
+
+.top .bh .ei .cp .ap .kb {
+  margin-top: 8px;
+  display: block;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 15px;
+  color: #000;
+  font-family: UberMove, system-ui, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
