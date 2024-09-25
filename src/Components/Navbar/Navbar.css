@@ -184,14 +184,12 @@
     display: none;
   }
   .menu {
-    display: block;
+    display: flex;
+    flex-direction: row;
     color: #fff;
     cursor: pointer;
     padding: 15px;
     margin-right: 10px;
-    gap: 10px;
-    text-align: center;
-    align-items: center;
   }
   .menu button {
     font-size: 13px;
@@ -205,5 +203,24 @@
   }
   .menu_option {
     display: block;
+  }
+  .dpd {
+    border: none;
+    background-color: #a6a6a6;
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 70px;
+    border: none;
+    z-index: 2;
+    width: 100%
+  }
+  .dpd ul {
+    transition: .5s;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+
   }
 }

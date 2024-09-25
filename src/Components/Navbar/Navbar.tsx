@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react"
-import { AlignJustify, ChevronDown, ChevronUp, Globe } from "lucide-react"
+import { AlignJustify, ChevronDown, ChevronUp, Globe, X } from "lucide-react"
 import "./Navbar.css"
 import { useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom"
@@ -11,9 +11,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [isHome, setIsHome] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMenu, setIsMenu] = useState(false);
+
+  const handleMenu = () => {
+    setIsMenu(!isMenu);
+  }
 
   useEffect(() => {
+    setIsHome(!isHome); // find a way to do this without pressing the Uber text in the navbar 
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -38,6 +44,12 @@ const Navbar = () => {
     navigate("/mid");
   };
 
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+    setIsHome(!isHome)
+    console.log(options);
+  };
+
   const options = [
     "About us",
     "Our Offerings",
@@ -52,11 +64,13 @@ const Navbar = () => {
     "Careers",
   ];
 
+  const menus = [
+    "Ride",
+    "Drive",
+    "Uber Eats",
+    "About",
+  ]
 
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
-    console.log(options);
-  };
 
   return (
     <div className='navbar'>
@@ -107,14 +121,16 @@ const Navbar = () => {
         <div className="menu">
           <button><Link to="/login">Login</Link></button>
           <button className="button"><Link to="/mid">Signup</Link></button>
-          <AlignJustify />
-          <>
-            {options.map((option, index) => (
-              <ul className="menu_option" key={index}>
-                <li>{option}</li>
-              </ul>
-            ))}
-          </>
+          {!isMenu ? <AlignJustify onClick={handleMenu} /> : <X onClick={handleMenu} />}
+          <div className="dpd">
+            {isMenu && (
+              menus.map((option, index) => (
+                <ul className="menu_option" key={index}>
+                  <li>{option}</li>
+                </ul>
+              ))
+            )}
+          </div>
         </div>
       )}
     </div>
