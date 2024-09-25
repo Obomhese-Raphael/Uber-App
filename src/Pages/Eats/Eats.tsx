@@ -6,6 +6,55 @@ const Eats = () => {
     return (
         <div className="eats">
             <div className="top">
+                <div className="sm_home">
+                    <img className="bg_img" src="https://www.ubereats.com/_static/d8ceaf24a3164759.webp" />
+                    <div className="ag">
+                        <h2 className="odn">Order delivery near you</h2>
+                        <div>
+                            <div>
+                                <a className="dm">
+                                    <div className="fe">
+                                        <MapPin className="map_pin" />
+                                        <div className="je">
+                                            <input type="text" className="input" placeholder="Enter delivery address" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a className="cc5">
+                            <div className="bc">
+                                <div className="spacer _4"></div>
+                                <div className="ek">
+                                    <div className="ci">
+                                        <div className="eg">
+                                            <ClockIcon />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="ub">
+                                    <div className="cr">
+                                        Deliver now
+                                    </div>
+                                    <div className="space _4"></div>
+                                    <div className="ic">
+                                        <div className="me">
+                                            <ChevronDown />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a className="re" href="">
+                            Search here
+                        </a>
+                        <div className="c6">
+                            Or <span></span>
+                            <a className="et">Sign In</a>
+                        </div>
+                    </div>
+                    <div className="ue"></div>
+                </div>
                 <div className="inner_top">
                     <div className="head">
                         <h1 style={{ marginBottom: "20px", fontFamily: "Uber Move Text" }}>Order delivery near you.</h1>

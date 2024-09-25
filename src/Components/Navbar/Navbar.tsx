@@ -19,7 +19,6 @@ const Navbar = () => {
   }
 
   useEffect(() => {
-    setIsHome(!isHome); // find a way to do this without pressing the Uber text in the navbar 
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -29,6 +28,7 @@ const Navbar = () => {
     setIsOpen(false);
     navigate("/");
     setIsMobile(!isMobile);
+    setIsHome(!isHome);
   };
 
   const handleLogin = () => {
@@ -121,12 +121,24 @@ const Navbar = () => {
         <div className="menu">
           <button><Link to="/login">Login</Link></button>
           <button className="button"><Link to="/mid">Signup</Link></button>
-          {!isMenu ? <AlignJustify onClick={handleMenu} /> : <X onClick={handleMenu} />}
+          {!isMenu ? 
+            <AlignJustify 
+              className="alj" 
+              onClick={handleMenu} 
+            /> 
+          : 
+            <X 
+              className="x" 
+              onClick={handleMenu} 
+            />
+          }
           <div className="dpd">
             {isMenu && (
               menus.map((option, index) => (
                 <ul className="menu_option" key={index}>
-                  <li>{option}</li>
+                  <li>
+                    <Link to={option === "Uber Eats" ? "/eats" : "/"}>{option}</Link>
+                  </li>
                 </ul>
               ))
             )}

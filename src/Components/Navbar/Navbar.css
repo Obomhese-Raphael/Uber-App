@@ -157,6 +157,18 @@
   margin-right: 4px;
 }
 
+.alj {
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.x {
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
@@ -221,6 +233,15 @@
     width: 100%;
     z-index: -1;
     display: flex;
-
+  }
+  .alj:hover {
+    background-color: #3d3737;
+    border: none;
+    border-radius: 50%;
+  }
+  .x:hover {
+    background-color: #3d3737;
+    border: none;
+    border-radius: 50%;
   }
 }
