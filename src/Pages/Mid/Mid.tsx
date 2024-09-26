@@ -10,6 +10,8 @@ const Mid = ({ setIsOpen }: any) => {
 
     return (
         <div className="mid">
+
+            <div className="ag"></div>
             <div className="inner_mid">
                 <section className="section tab">
                     <button onClick={handleTabClick} className="button"><Link to="/"><X /></Link></button>

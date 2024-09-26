@@ -238,3 +238,13 @@
   padding-right: 16px;
   line-height: 20px;
 }
+
+
+/* Media Queries */ 
+
+@media screen and (max-width: 1024px) {
+  .login {
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+}
