@@ -19,13 +19,17 @@ const Eats_Mid = () => {
                             <p className="fm">There's more to the iPhone app.</p>
                         </div>
                         <a href="">
-                            <button className="btt">
-                                <div className="al">
-                                    <img className="img" src={apple_icon} alt="" />
-                                    <div className="spacer _8"></div>
-                                    Get the app
-                                </div>
-                            </button>
+                            <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=en">
+                                <button className="btt">
+                                    <div className="al">
+                                        <a style={{ display: "flex", alignItems: "center", cursor: "pointer", width: "100%" }} href="">
+                                            <img className="img" src={apple_icon} alt="" />
+                                            <div className="spacer _8"></div>
+                                            Get the app
+                                        </a>
+                                    </div>
+                                </button>
+                            </a>
                         </a>
                     </div>
                 </div>

@@ -36,7 +36,7 @@ const Mid = ({ setIsOpen }: any) => {
                                     <div className="inner_grid">
                                         <a className="link">
                                             <div className="inner_link">
-                                                <h2 className="inner_link_h2"><Link to="/loign">Order delivery with Uber Eats</Link> <span><ArrowRight /></span></h2>
+                                                <h2 className="inner_link_h2"><Link to="/login">Order delivery with Uber Eats</Link> <span><ArrowRight /></span></h2>
                                             </div>
                                         </a>
                                     </div>

@@ -7,6 +7,7 @@ import port from "../../assets/u4b-square.webp"
 import qr_1 from "../../assets/QR-Code_1.webp"
 import qr_2 from "../../assets/QR-Code_1.webp"
 import { ArrowRight } from "lucide-react"
+import { Link } from "react-router-dom"
 
 
 const Suggestions = () => {
@@ -34,7 +35,7 @@ const Suggestions = () => {
                             <button className="button">Details</button>
                         </div>
                         <div className="right">
-                            <img src={connect} alt="Ride" />       
+                            <img src={connect} alt="Ride" />
                         </div>
                     </li>
                     <li className="program">
@@ -53,14 +54,14 @@ const Suggestions = () => {
             <div className="section_2">
                 <div className="left">
                     <img src={Drive} alt="" />
-                </div>    
+                </div>
                 <div className="right">
                     <p className="gawu">Drive when you <br /> want, make what you need</p>
                     <p className="rar">Make money on your schedule with deliveries or rides—or <br /> both. You can use your own car or choose a rental <br /> through Uber.</p>
 
                     <div className="inner">
                         <button>Get Started</button>
-                        <p>Already have an account? Sign in</p>
+                        <Link to="/login"><p>Already have an account? Sign in</p></Link>
                     </div>
 
                 </div>
@@ -73,7 +74,7 @@ const Suggestions = () => {
 
                     <div className="inner">
                         <button>Get Started</button>
-                        <p>Already have an account? Sign in</p>
+                        <Link to="/login"><p>Already have an account? Sign in</p></Link>
                     </div>
                 </div>
                 <div className="right">
@@ -89,7 +90,7 @@ const Suggestions = () => {
                 <ul className="programs">
                     <li className="program">
                         <div className="right">
-                           <img src={qr_1} alt="" />
+                            <img src={qr_1} alt="" />
                         </div>
                         <div className="right other_right">
                             <h4>Download the Uber App</h4>

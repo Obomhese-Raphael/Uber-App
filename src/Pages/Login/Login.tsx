@@ -36,9 +36,11 @@ const Login = () => {
                                                                     <img className="img" src={google_icon} alt="" />
                                                                 </div>
                                                                 <div className="g-text">
-                                                                    <p className="g-text_inner">
-                                                                        Continue with Google
-                                                                    </p>
+                                                                    <a href="https://play.google.com/store/apps/details?id=com.ubercab&hl=en">
+                                                                        <p className="g-text_inner">
+                                                                            Continue with Google
+                                                                        </p>
+                                                                    </a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -55,9 +57,11 @@ const Login = () => {
                                                                     <img className="img" src={apple_icon} alt="" />
                                                                 </div>
                                                                 <div className="g-text">
-                                                                    <p className="g-text_inner">
-                                                                        Continue with Apple
-                                                                    </p>
+                                                                    <a href="https://play.google.com/store/apps/details?id=com.ubercab&hl=en">
+                                                                        <p className="g-text_inner">
+                                                                            Continue with Apple
+                                                                        </p>
+                                                                    </a>
                                                                 </div>
                                                             </div>
                                                         </div>

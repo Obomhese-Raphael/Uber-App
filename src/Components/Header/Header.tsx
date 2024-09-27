@@ -15,7 +15,7 @@ const Header = () => {
                         <span><Send /> </span>
                     </div>
                     <input className="des" type="text" placeholder="Enter Destination" />
-                    <button className="sp">See prices</button>
+                    <button className="sp">See prices</button> 
                 </div>
                 <div className="right">
                     <img src={Home} alt="" />

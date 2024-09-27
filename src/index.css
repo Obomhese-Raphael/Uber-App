@@ -6,7 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "UberMove", "UberMoveText", "Uber Move", "Uber Move Text", sans-serif;
+  font-family: "UberMove", "UberMoveText", "Uber Move", "Uber Move Text",
+    sans-serif;
 }
 
 li {
@@ -61,4 +62,8 @@ h2 {
 
 .icon {
   display: none;
+}
+
+button {
+  cursor: pointer;
 }

@@ -228,6 +228,7 @@
 
 .icon img {
   width: 25px;
+  border: 4px solid red;
 }
 
 .pro {
@@ -246,5 +247,11 @@
   .login {
     min-width: 100%;
     overflow-x: hidden;
+  }
+  .icon {
+    display: block;
+  }
+  .icon img {
+    display: block;
   }
 }

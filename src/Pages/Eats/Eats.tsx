@@ -1,6 +1,7 @@
 import { ChevronDown, ClockIcon, MapPin } from "lucide-react";
 import "./Eats.css";
 import Eats_Mid from "../../Components/Eats_Mid/Eats_Mid";
+import { Link } from 'react-router-dom';
 
 const Eats = () => {
     return (
@@ -50,7 +51,7 @@ const Eats = () => {
                         </a>
                         <div className="c6">
                             Or <span></span>
-                            <a className="et">Sign In</a>
+                            <a className="et"><Link to="/login">Sign In</Link></a>
                         </div>
                     </div>
                     <div className="ue"></div>
@@ -106,7 +107,7 @@ const Eats = () => {
                             </div>
                         </div>
                         <div className="link">
-                            <p>Or <span style={{ textDecoration: "underline" }}>Sign In</span></p>
+                            <p>Or <span style={{ textDecoration: "underline" }}><Link to="/login">Sign In</Link></span></p>
                         </div>
                     </div>
                 </div>
