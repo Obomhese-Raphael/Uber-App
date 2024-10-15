@@ -101,7 +101,13 @@ const Navbar = () => {
           >
             <p onClick={handleChevron} className="text">About</p>
             <span onClick={handleChevron} style={{ marginLeft: "-20px", width: "20px", marginTop: "5px", color: "white", cursor: "pointer" }}>
-              {isExpanded ? <ChevronUp className="chev" /> : <ChevronDown className="chev" />}
+              {
+                isExpanded
+                  ?
+                  <ChevronUp className="chev" />
+                  :
+                  <ChevronDown className="chev" />
+              }
             </span>
             {isOpen ? (
               <div className="dropdown">
@@ -125,13 +131,19 @@ const Navbar = () => {
         {isHome ? <ul>
           <li className="en"><span><Globe className="globe" /></span>EN</li>
           <li>Help</li>
-          <li><Link onClick={handleLogin} style={{ textDecoration: "none", color: "inherit" }} to="/login">Log in</Link></li>
+          <li>
+            <Link
+              onClick={handleLogin}
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="/login"
+            >Log in
+            </Link>
+          </li>
           <li className="button"><button onClick={handleButtonClick}>Sign Up</button></li>
         </ul> : null}
       </div>
       {isMobile && (
         <div className="menu">
-          {/* <button><Link to="/login">Login</Link></button> */}
           <button className="button"><Link to="/mid">Signup</Link></button>
           {!isMenu ?
             <AlignJustify
@@ -149,7 +161,7 @@ const Navbar = () => {
               menus.map((option, index) => (
                 <ul className="menu_option" key={index}>
                   <li>
-                    <Link to={option === "Uber Eats" ? "/eats" : "/"}>{option}</Link>
+                    <Link to={ option === "Uber Eats" ? "/eats" : "/" }>{option}</Link>
                   </li>
                 </ul>
               ))

@@ -14,6 +14,7 @@ function FaviconAndTitleUpdater() {
 
   useEffect(() => {
     const currentPageUrl = location.pathname;
+    window.scrollTo(0, 0);
 
     const favicon = document.getElementById('favicon') as HTMLLinkElement;
 

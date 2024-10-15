@@ -60,7 +60,7 @@ const Suggestions = () => {
                     <p className="rar">Make money on your schedule with deliveries or rides—or <br /> both. You can use your own car or choose a rental <br /> through Uber.</p>
 
                     <div className="inner">
-                        <button>Get Started</button>
+                        <button><Link to="/login">Get Started</Link></button>
                         <Link to="/login"><p>Already have an account? Sign in</p></Link>
                     </div>
 
@@ -73,13 +73,12 @@ const Suggestions = () => {
                     <p className="rar">Make money on your schedule with deliveries or rides—or <br /> both. You can use your own car or choose a rental <br /> through Uber.</p>
 
                     <div className="inner">
-                        <button>Get Started</button>
-                        <Link to="/login"><p>Already have an account? Sign in</p></Link>
+                        <button><Link to="/mid">Get Started</Link></button>
+                        <Link to="/mid"><p>Already have an account? Sign in</p></Link>
                     </div>
                 </div>
                 <div className="right">
                     <img src={port} alt="" />
-
                 </div>
             </div>
 

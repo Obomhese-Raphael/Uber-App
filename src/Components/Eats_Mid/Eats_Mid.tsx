@@ -5,6 +5,7 @@ import img_3 from "../../assets/img_3.webp"
 import "./Eats_Mid.css"
 import map from "../../assets/2024-09-24.png"
 import apple_icon from "../../assets/apple-icon.png"
+import { Link } from "react-router-dom"
 
 const Eats_Mid = () => {
     return (
@@ -38,19 +39,19 @@ const Eats_Mid = () => {
                     <a>
                         <img className="f7" src="https://www.ubereats.com/_static/88d55f7112efe55f.webp" />
                         <p className="bm">Feed your employees</p>
-                        <p className="bn">Create a business account</p>
+                        <p className="bn"><Link to="/login">Create a business account</Link></p>
                     </a>
                     <div className="ek dg"></div>
                     <a>
                         <img className="f7" src="https://www.ubereats.com/_static/711d51ca1b458931.webp" />
                         <p className="bm">Our restaurant, delivered</p>
-                        <p className="bn">Add your restaurant</p>
+                        <p className="bn"><Link to="/login">Add your restaurant</Link></p>
                     </a>
                     <div className="ek dg"></div>
                     <a>
                         <img className="f7" src="https://www.ubereats.com/_static/16522a701585873b.webp" />
                         <p className="bm">Deliver with Uber Eats</p>
-                        <p className="bn">Sign up to deliver</p>
+                        <p className="bn"><Link to="/login">Sign up to deliver</Link></p>
                     </a>
                 </div>
                 <div className="ek cd"></div>
@@ -310,7 +311,7 @@ const Eats_Mid = () => {
                                 <img className="as" src={img_2} alt="" />
                             </div>
                             <p className="bk">Your restaurant, delivered</p>
-                            <p className="kb">Add your restaurant</p>
+                            <p className="kb"><Link to="./login">Add your restaurant</Link></p>
                         </div>
                     </a>
                 </div>
